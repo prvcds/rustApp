@@ -75,3 +75,20 @@ pub fn remove_task(id: usize) {
         println!("Task not found.");
     }
 }
+
+pub fn search_tasks(query: &str) {
+    let tasks = load_tasks();
+    let results: Vec<&Task> = tasks.iter().filter(|task| task.description.contains(query)).collect();
+    if results.is_empty() {
+        println!("No tasks found matching '{}'", query);
+    } else {
+        for task in results {
+            println!(
+                "[{}] {} - {}",
+                task.id,
+                if task.done { "x" } else { " " },
+                task.description
+            );
+        }
+    }
+}
