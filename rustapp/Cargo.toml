@@ -1,7 +1,12 @@
 [package]
 name = "rustapp"
 version = "0.1.0"
+authors = ["Parv Jhanwar <parvjhanwar@gmail.com>"]
 edition = "2021"
+license = "MIT"
+repository = "https://github.com/prvcds/to-do-list-CLI-rust"
+keywords = ["cli", "todo", "example"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4.3", features = ["derive"] }
