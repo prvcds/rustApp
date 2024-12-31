@@ -1,5 +1,5 @@
 [package]
-name = "rustapp"
+name = "rustappCLI"
 version = "0.1.0"
 authors = ["Parv Jhanwar <parvjhanwar@gmail.com>"]
 edition = "2021"
