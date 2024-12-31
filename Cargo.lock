@@ -140,7 +140,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustapp"
+name = "rustappCLI"
 version = "0.1.0"
 dependencies = [
  "clap",
